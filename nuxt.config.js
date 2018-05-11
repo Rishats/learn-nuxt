@@ -18,6 +18,7 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   build: {
+    vendor: ['element-ui'],
     /*
     ** Run ESLINT on save
     */
@@ -31,5 +32,8 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  plugins: [
+    '~plugins/element-ui'
+  ]
 }
